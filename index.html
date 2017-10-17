@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<title>Assignment 1: HTML5 Validated Form</title>
+<html>
+
+<head>
+	<link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-clipboard-pencil.svg">
+	<link rel="shortcut icon" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-clipboard-pencil.svg">
+	<link rel="apple-touch-icon" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-clipboard-pencil.svg">
+
+	<meta name="viewport" content="width=device-width">
+	<meta name="og:title" content="Assignment 1: HTML5 Validated Form">
+	<meta name="og:description" content="Assignment 1 on HTML5 Validated Form for the Mobile Web Programming online course">
+
+	<style type="text/css">
+
+		body {
+		  font-family:Verdana, sans-serif;
+		  margin-left:20px;}
+
+		h1, h2 {
+		  color: green;}
+
+		article {
+		  border-left: 5px solid green; 
+		  padding:20px; 
+		  background-color: #eee; 
+		  padding-left:20px; 
+		  border-radius:30px; 
+		  width:60%;}
+
+		button {
+		  -webkit-transition-duration: 0.3s; /* Safari */
+    	  transition-duration: 0.3s;
+    	  font-size: 1em;
+    	  background-color: green;
+    	  color:white;}
+
+    	button:hover {
+    	  background-color:white;
+    	  color:green;}
+
+		input[type="checkbox"] {
+  		  width:25px;
+  		  height:25px;} 
+
+	</style>
+
+</head>
+
+<body>
+
+	<header>
+		<h1>Mobile Compatible Web Programming</h1>
+			<h2>Assignment 1</h2>
+				<p>Please enter your information below.</p>
+	</header>
+	
+
+	<article>
+		<form action="formAction" method="post">
+			<dl>
+				<dt><label for="email">Email address:</label></dt>
+				<dd><input type="email" name="email"/></dd>
+
+				<br/>				
+			
+				<dt><label for="personalurl">Personal URL:</label></dt>
+				<dd><input type="url" name="personalurl" placeholder='e.g., http://yourdomainname.com'></dd>
+
+				<br/>
+
+				<dt><label for="birthyear">Year of birth:</label></dt>
+				<dd><input id="birthyear" type="number" min="1915" max="2017"></dd>
+
+				<br/>				
+
+  				<dt><label for="gender">Gender:</label></dt>
+  				<dd><input type="radio" name="gender" value="female"> Female</dd>
+				<dd><input type="radio" name="gender" value="male"> Male</dd>  			
+  				<dd><input type="radio" name="gender" value="other"> Other</dd>
+
+				<br/>  				
+
+				<dt><label for="comments">Comments:</label></dt>
+				<dd><textarea name="comments"  rows="10" cols="50"></textarea></dd>
+
+			</dl>
+
+				<input type="checkbox" name="confirm" id="confirm" value="yes">
+				<label for="confirm">I confirm that the above information entered are fictitious.</label>
+
+				<br/>				
+				<br/>				
+			
+				<button type="reset" value="clear all">Clear all</button>
+
+		</form>
+
+	</article>
+
+
+</body>
