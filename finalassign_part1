@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<title>Final project: Health and fitness tips from Anne</title>
+<html>
+
+<head>
+
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="og:title" content="Final project: Health and fitness tips">
+	<meta name="og:description" content="Health and fitness tips including ways to get motivated to workout, green smoothie recipes, and relaxation ideas">
+
+	<link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-heart.svg">
+	<link rel="shortcut icon" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-heart.svg">
+	<link rel="apple-touch-icon" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-heart.svg">
+
+
+
+
+	<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+	<script src="js/prefixfree.min.js"></script>		
+
+	<link rel="stylesheet" type="text/css" href="css/appStyles.css">	
+
+
+	<style>
+
+	@font-face {
+		font-family: 'Rock Salt';
+		src: url('fonts/RockSalt.ttf');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Kalam Light';
+		src: url('fonts/Kalam-Light.ttf');
+		font-weight:normal;
+		font-style:normal;
+	}
+
+	body {
+		font-family: 'Kalam Light', sans-serif;
+		color: #444;
+		margin-left:20px;
+		border-left: 5px solid #4CAF50; 
+		padding:20px; 
+		border-radius:30px;
+		box-shadow:11px 11px 3px #444;
+		font-size:1.2em;
+	}
+
+	h1, h2 {
+		font-family: 'Rock Salt', sans-serif !important;
+	}
+
+	.clip img {
+		left: 5%;
+		clip-path: circle(100px at center center);
+	}
+
+
+	.flexcontainer {
+		display: flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+	}
+
+	.flexitem {
+		flex-grow: 1;
+		flex-shrink: 4;
+	}
+
+
+	input:placeholder-shown {
+		background: lightgreen;
+		color:#444;
+
+	}
+
+	input:placeholder-shown ~ .msg {
+		display: none;
+	}
+
+
+	#slidecontainer {
+		width: 100%;
+	}
+
+	.slider {
+		-webkit-appearance: none;
+		width: 100%;
+		height: 50px;
+		background: #d3d3d3;
+		outline: none;
+		opacity: 0.7;
+		-webkit-transition: .2s;
+		transition: opacity .2s;
+	}
+
+	.slider:hover {
+		opacity: 1;
+	}
+
+	.slider::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 50px;
+		height: 50px;
+		background: #4CAF50;
+		cursor: pointer;
+	}
+
+	.slider::-moz-range-thumb {
+		width: 50px;
+		height: 50px;
+		background: #4CAF50;
+		cursor: pointer;
+	}
+
+	input[type=text] {  padding: 5px 10px;
+		font-size: 1em;}
+
+		input[type=checkbox] {transform: scale(1.5);}
+
+		input[type=submit], input[type=button] {
+			display: inline-block;
+			padding: 5px 10px;
+			font-size: 1em;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			outline: none;
+			color: #fff;
+			background-color: #444;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 5px #4CAF50;
+		}
+
+
+		input[type=submit]:active, input[type=button]:active {
+			background-color: #4CAF50;
+			box-shadow: 0 5px #444;
+			transform: translateY(4px);
+			}}
+
+
+			</style>
+
+
+
+
+
+
+		</head>
+
+		<body>
+
+
+			<header>
+				<h1>Health and Fitness Tips</h1>
+
+				
+
+			</header>
+
+
+			<article id="welcomeMsg">
+				<h2>Welcome</h2>
+				
+
+
+				<p>Glad you dropped by! This app is meant to provide you with helpful tips to stay motivated in working out (at the gym or in the comfort of your own home) while feeding your body the nutrition it needs by making your own green smoothies! Taking a break or time to wind down after a long day at work, school, and/or parenting duties is also a significant part of your health so relaxation ideas (my favourite!) are also available on this app.</p>
+				
+
+
+				<div id="mySwipe"><p>Slide the bar below to get started</p>
+					
+					<div id="slidecontainer">
+						<input type="range" min="1" max="50" value="10" class="slider" id="myRange">
+					</div>
+					
+					
+					
+				</div><!--end swipe-->
+				
+				<div class="clip flexcontainer">
+					
+					<div class="flexitem"><img src="images/dumbbells.jpg"></div>
+					<div class="flexitem"><img src="images/smoothie.jpg"></div>	
+					<div class="flexitem"><img src="images/relaxation.jpg"></div>				
+					
+				</div>	
+				
+			</article><!--end welcomeMsg-->
+
+
+
+
+			<article id="getStarted"  style="display:none;">
+				
+				<h2>Get started</h2>
+				
+				<p>By completing the following form, you will be making a promise to yourself to get started on your health and fitness journey. This is a great way to begin your New Year's resolution!</p>
+				
+				<p>Please enter your name below and select which tip(s) you are interested in learning more about. Once you've filled out the form, click on the <strong>Review my promise</strong> button to read your promise to yourself. When you're ready, click on the <strong>Sign it!</strong> button to seal the deal and proceed to your journey!</p>
+				
+				<form action="start.html">
+					
+					<input type="text" id="name" name="name" placeholder="Name">
+					<span class="msg">Name</span>
+					<br><br>
+					<input type="checkbox" name="tips" value="workout">
+					<label for="workout">Workout motivations</label>
+					<br><br>
+					<input type="checkbox" name="tips" value="smoothies">
+					<label for="smoothies">Green smoothie recipes</label>			
+					<br><br>
+					<input type="checkbox" name="tips" value="relaxation">
+					<label for="relaxation">Relaxation ideas</label>			
+					<br><br>
+					
+					
+					<input type="button" onclick="mySelection()" value="Review your promise">
+					<br><br>
+					<textarea id="selection"  rows="10" cols="50"> </textarea>
+					
+					<br><br>
+					<input type="submit" value="Sign it!">&nbsp;&nbsp;&nbsp;<input type="reset" value="Clear all">
+					
+				</form>
+				
+				
+				
+			</article><!--end getStarted-->
+			
+
+
+
+
+			<script>
+	//Gestures
+	var mySwipe = document.getElementById("mySwipe");
+
+
+	mc = new Hammer(mySwipe);
+	mc.get("swipe").set({direction:Hammer.DIRECTION_ALL, threshold:1, velocity:0.1});
+	mc.on("swipeleft swiperight", function() {
+
+		document.getElementById("getStarted").style.display = "block";      
+		document.getElementById("welcomeMsg").style.display = "none";            
+		
+
+	}       
+
+	);
+
+	
+	</script>
+
+
+	<script>
+	function mySelection() {
+		var name = document.getElementById("name").value
+		var tips = document.forms[0];
+		var txt = "";
+		var i;
+		for (i = 0; i < tips.length; i++) {
+			if (tips[i].checked) {
+				txt = txt + tips[i].value + " ";
+			}
+		}
+
+		document.getElementById("selection").value = "I, " + name + ", promise to take these tips: " + txt + " to heart and follow what works for me in order to stay healthy and fit!";
+	}
+	</script>
+
+
+
+
+
+
+
+</body>
