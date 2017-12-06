@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+	<title>Final project: Health and fitness tips from Anne</title>
+	<html>
+
+	<head>
+
+
+
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="og:title" content="Final project: Health and fitness tips">
+	<meta name="og:description" content="Health and fitness tips including ways to get motivated to workout, green smoothie recipes, and relaxation ideas">
+
+	<link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-heart.svg">
+	<link rel="shortcut icon" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-heart.svg">
+	<link rel="apple-touch-icon" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-heart.svg">
+
+
+	<script src="js/prefixfree.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/myStyle.css">	
+
+	<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+
+
+	<style>
+
+	@font-face {
+		font-family: 'Rock Salt';
+		src: url('fonts/RockSalt.ttf');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Kalam Light';
+		src: url('fonts/Kalam-Light.ttf');
+		font-weight:normal;
+		font-style:normal;
+	}
+
+	body {
+		font-family: 'Kalam Light', sans-serif;
+		color: #444;
+		margin-left:20px;
+		border-left: 5px solid #4CAF50; 
+		padding:20px; 
+		border-radius:30px;
+		box-shadow:11px 11px 3px #444;
+		font-size:1.2em;	
+	}
+
+	h1, h2 {
+		font-family: 'Rock Salt', sans-serif !important;
+	}
+	nav {
+		background-color: #000;
+		display: block;
+		padding: 1em 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	nav a {
+		color: #fff;
+		margin: 0 0.2em;
+		text-decoration: none;
+	}
+
+	.scrolling-box {
+		background-color: #eaeaea;
+		display: block;
+		height: 500px;
+		overflow-y: scroll;
+		scroll-behavior: smooth;
+		width: 100%;
+
+	}
+
+	#workout, #nourish, #relax {  text-align: center;
+	}
+
+
+	section {
+
+		height: 100%;
+	}
+
+
+	section p {  padding-top:15px;
+	}
+
+
+
+	@media only screen and (orientation: landscape){
+		.bonus {
+			visibility:visible;
+			column-count: 2;
+			column-width: 75px;
+			column-gap: 5px;
+			column-rule: 1px solid #fff;}
+
+			#bonusInstruct {visibility:hidden;}
+		}
+
+
+		@media only screen and (orientation: portrait){
+			.bonus {
+				visibility:hidden;}}
+
+				</style>
+
+
+
+
+
+			</head>
+
+			<body>
+
+
+				<header>
+					<h1>Health and Fitness Tips</h1>
+					<h2>Your journey</h2>
+				</header>
+
+
+				<article>
+
+					<p>Congratulations on taking the first step to your health and fitness journey! In this page you will discover:</p>
+
+					<nav>
+						<a href="#myWorkoutTap">Workout</a>
+						<a href="#myNourishTap">Nourish</a>
+						<a href="#myRelaxTap">Relax</a>
+						<a href="#bonus">Bonus</a>
+					</nav>
+
+
+
+					<div class="scrolling-box">
+
+
+						<section id="myWorkoutTap">
+
+							<section id="workout">  
+								<p><strong>Workout motivations</strong>: Feel energized by following our simple and doable tips to get you motivated to workout!</p>
+								<p>Tap the screen to reveal some workout motivation tips!</p>
+							</section><!--end workout-->
+
+							<section style="display:none;" id="tappedWorkout">
+								<p>Workout motivations:</p> 
+								<ul>
+									<li>Set your workout goals (e.g., working out 2-3 times a week)</li> 	  
+									<li>Go to bed with your workout clothes on to get you ready for that early morning workout session</li>		
+									<li>Start your workout session with your favourite workout to get you sweating and heart pumping.</li>
+								</ul>
+							</section><!--end tappedWorkout-->
+
+	</section> <!--- end myWorkoutTap --->
+
+
+
+
+	<section id="myNourishTap">
+
+	<section id="nourish">
+	<p><strong>Green smoothie recipes</strong>: Nourish yourself by following our delicious green smoothie recipes!</p>
+	<p>Tap the screen to reveal some green smoothie recipes!</p>
+	</section> <!--end nourish-->
+
+	<section style="display:none;" id="tappedNourish">
+	<p>Green smoothie recipes:</p>
+	<ul>
+		<li>Spinach, avocado, papaya, honey dew and coconut water</li> 	  
+		<li>Kale, banana, yogurt and almond milk</li>
+		<li>Arugula, apple, flax seeds and coconut water</li>
+	</ul>
+	</section><!--end tappedNourish-->
+
+	</section><!--- end myNourishTap --->
+
+
+
+
+	<section id="myRelaxTap">
+
+	<section id="relax">  
+	<p><strong>Relaxation ideas</strong>: Take a break from the everyday and try out our ideas for relaxation!</p>
+	<p>Tap the screen to reveal some relaxation ideas!</p>
+	</section><!--end relax-->
+
+	<section style="display:none;" id="tappedRelax">
+	<p>Relaxation ideas:</p>
+	<ul>
+		<li>Mindfulness exercises</li> 	  
+		<li>Yoga</li>		
+		<li>Listening to music</li>
+		<li>Movie night</li>
+		<li>Reading</li>
+	</ul>
+	</section><!--end tappedRelax-->
+
+	</section> <!--- end myRelaxTap --->
+
+
+
+
+	<section id="bonus">
+	<p id="bonusInstruct">To reveal the bonus tip, tilt your phone to landscape orientation.</p>
+
+	<div class="bonus">
+	<p>Eat smart!</p>
+	<p>Source: <a href="https://www.webmd.com" target="_blank">WebMD</a></p>
+
+	<p>Fill half your plate with fruits and vegetables. Split the other half between whole grains and lean protein. Stick to your calorie budget, because when you're working on losing weight, you need to burn more calories than you eat or drink. Exactly how many calories you should get per day depends on your goal, your age, your sex, and how active you are. A dietitian can help you figure that out. Don't cut your calories too much, or your diet is going to be hard to stick with and may not give you the nutrients your body needs.</p>
+
+	<p>Calories are a measurement, like an inch or a tablespoon. They note how much energy is released when your body breaks down food. The more calories a food has, the more energy it can provide to the body. When you eat more calories than you need, your body stores the extra calories as fat. Even low-carb and fat-free foods can have a lot of calories that can be stored as fat.</p>
+
+
+	</div><!--end bonus-->
+
+	</section><!--end bonus-->
+
+	</div><!--end scrolling box-->
+
+
+	</article>
+
+
+
+
+	<script>
+
+	var myWorkoutTap = document.getElementById('myWorkoutTap');
+
+	var mc = new Hammer.Manager(myWorkoutTap);
+
+	mc.add( new Hammer.Tap({ event: 'doubletap', taps: 2 }) );
+	mc.add( new Hammer.Tap({ event: 'singletap' }) );
+
+
+	mc.get('doubletap').recognizeWith('singletap');
+	mc.get('singletap').requireFailure('doubletap');
+
+
+	mc.on("singletap doubletap", function() {
+	document.getElementById("tappedWorkout").style.display="block";
+	document.getElementById("workout").style.display="none";
+
+	});
+
+	</script>
+
+
+	<script>
+
+	var myNourishTap = document.getElementById('myNourishTap');
+
+	var mc = new Hammer.Manager(myNourishTap);
+
+	mc.add( new Hammer.Tap({ event: 'doubletap', taps: 2 }) );
+	mc.add( new Hammer.Tap({ event: 'singletap' }) );
+
+
+	mc.get('doubletap').recognizeWith('singletap');
+	mc.get('singletap').requireFailure('doubletap');
+
+
+	mc.on("singletap doubletap", function() {
+	document.getElementById("tappedNourish").style.display="block";
+	document.getElementById("nourish").style.display="none";
+
+	});
+
+	</script>
+
+	<script>
+
+	var myRelaxTap = document.getElementById('myRelaxTap');
+
+	var mc = new Hammer.Manager(myRelaxTap);
+
+	mc.add( new Hammer.Tap({ event: 'doubletap', taps: 2 }) );
+	mc.add( new Hammer.Tap({ event: 'singletap' }) );
+
+
+	mc.get('doubletap').recognizeWith('singletap');
+	mc.get('singletap').requireFailure('doubletap');
+
+
+	mc.on("singletap doubletap", function() {
+	document.getElementById("tappedRelax").style.display="block";
+	document.getElementById("relax").style.display="none";
+
+	});
+
+	</script>	
+
+
+
+	<!--
+
+
+	<p>The following are simple and doable tips to get you motivated to workout:</p>
+
+
+
+
+
+	-->
+
+	</body>
